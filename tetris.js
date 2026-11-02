@@ -2,7 +2,7 @@ const canvas = document.getElementById('tetrisbackground');
 const ctx = canvas.getContext('2d');
 const CELL_SIZE = 5;
 
-const ambientMusic = new Audio('ambient-music');
+const ambientMusic = new Audio('ambient-music.mp3');
 
 ambientMusic.loop = true;       
 ambientMusic.volume = 1;     
