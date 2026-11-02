@@ -2,6 +2,16 @@ const canvas = document.getElementById('tetrisbackground');
 const ctx = canvas.getContext('2d');
 const CELL_SIZE = 5;
 
+const ambientMusic = new Audio('ambient-music.mp3');
+
+ambientMusic.loop = true;       
+ambientMusic.volume = 1;     
+
+function startMusic() {
+    ambientMusic.play().catch(error => {
+        console.log("it's not playing for some reason, fix it", error);
+    });
+}
 window.addEventListener('keydown', (e) => {
     if (!currentPiece) return;
 
