@@ -105,8 +105,28 @@ function drawTetris() {
         ctx.drawImage(sprite, x, y, width, height);
     }
 
-    // Load & draw bats 
-    if (bats.length > 0 && batSprite) {
+// Load bat sprite
+const batSprite = new Image();
+batSprite.src = "assets/fat-bat.png";
+
+// Spawn randomly
+function spawnBat() {
+    const size = 40;
+    const x = Math.random() * (canvas.width - size);
+    const y = Math.random() * (canvas.height - size);
+    bats.push({
+        x: x,
+        y: y
+    });
+}
+
+// Spawn every 2 sec
+setInterval(function() {
+    spawnBat();
+}, 2000);
+// Draw bats
+function drawBats() {
+    if (bats.length > 0 && batSprite.complete && batSprite.naturalWidth > 0) {
         for (const bat of bats) {
             ctx.drawImage(
                 batSprite,
@@ -117,6 +137,7 @@ function drawTetris() {
             );
         }
     }
+}
     if (blockSprite && sprite) {
     const scale = 0.4;
     const boardWidth = sprite.width * scale;
