@@ -106,7 +106,6 @@ function drawTetris() {
     }
 
 // Load and draw bats
-function drawBats() {
     if (bats.length > 0 && batSprite) {
         for (const bat of bats) {
             ctx.drawImage(
