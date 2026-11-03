@@ -1,5 +1,6 @@
 Testing plan for spooky tetris
 
+
 | 1 | Make sure bats appear at the right height | Success |
 | 2 | Make sure the block appears. And at the correct size | Success |
 | 3 | Make sure the block can fall with gravity | Success |
