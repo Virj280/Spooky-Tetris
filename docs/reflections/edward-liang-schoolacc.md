@@ -1,7 +1,7 @@
 My main role in this project was to design features and fix existing bugs, such
 as spawning bats at the right elevation and preventing tetrominoes from going
 over the sides of the board; I also made art for the background. I had
-collaborated well with my team leader to get bugs patched. However, my
+collaborated well with my team leader to get bugs patched. I also made the code tour and test plan. However, my
 debugging was very unoptimized, since I mostly worked locally in Visual Studio
 Code and confusingly copy & pasted new sections of code to a version of the .js
 that other people had worked on.
