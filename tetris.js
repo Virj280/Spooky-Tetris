@@ -2,16 +2,19 @@ const canvas = document.getElementById('tetrisbackground');
 const ctx = canvas.getContext('2d');
 const CELL_SIZE = 5;
 
-const ambientMusic = new Audio('ambient-music.mp3');
+    const audio = document.getElementById('sound');
 
-ambientMusic.loop = true;       
-ambientMusic.volume = 1;     
-
-function startMusic() {
-    ambientMusic.play().catch(error => {
-        console.log("it's not playing for some reason, fix it", error);
+    document.addEventListener('click', () => {
+      // if sound is already playing, pause and restart
+      if (audio.paused) {
+        audio.currentTime = 0; // reset to start
+        audio.play();
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        audio.play();
+      }
     });
-}
 window.addEventListener('keydown', (e) => {
     if (!currentPiece) return;
 
