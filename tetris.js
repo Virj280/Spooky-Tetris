@@ -2,15 +2,15 @@ const canvas = document.getElementById('tetrisbackground');
 const ctx = canvas.getContext('2d');
 const CELL_SIZE = 5;
 
-    const sound = document.getElementById('sound');
-sound.loop = true;
+const audio = document.getElementById('sound');
+
+audio.loop = true;
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "p") {
-        sound.play();
+        audio.play();
     }
 });
-
 window.addEventListener('keydown', (e) => {
     if (!currentPiece) return;
 
