@@ -1,4 +1,5 @@
-# Spooky-Tetris v1.almost0
+# Spooky-Tetris v1.0
+Game link: [virj280.github.io/Spooky-Tetris](url)
 CS group project for a Halloween themed Tetris game. Assets like sprites and sfx can be found in /assets, and some sprite import files can be found in .pixil. The game itself holds all the original tetrominoes, as well as custom bats that trigger random events.
 
 The game is tetris; you drop tetrominoes and you can move them around
