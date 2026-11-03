@@ -2,7 +2,7 @@ Spooky Tetris lil code tour
 
 - index.html codes the canvas and music
 - tetris.js contains the js code for the game
-- assets/ holds the animated background, sounds and appearances of the tetrominoes
+- assets holds the animated background, sounds and appearances of the tetrominoes
 
 When the game is loaded:
 1. init() starts the game and loads necessary stuff
