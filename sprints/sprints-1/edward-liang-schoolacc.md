@@ -1,5 +1,4 @@
-My work this sprint
-
+# My work this sprint
 
 | Work | Estimate (min) | Actual (min) |
 | --- | --- | --- |
@@ -8,4 +7,8 @@ My work this sprint
 | Test and fix a bug regarding the bat spawning | Not tracked | Not tracked |
 | Test and fix a bug regarding tetrominoe's horizontal movement | Not tracked | Not tracked |
 
-Retrospect: We should have tracked our issues more clearly. Also, working on the same file at the same time as each other was hard. Also, I should have tracked estimated time and actual time
+# Sprint review
+My main task was making the background, which would later get animated for our game. Also, the bats spawned at the wrong elevation, which also needed to be fixed.
+
+# Retrospect
+We should have tracked our issues more clearly. Also, working on the same file at the same time as each other was hard. Also, I should have tracked estimated time and actual time
